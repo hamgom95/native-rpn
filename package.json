@@ -1,0 +1,37 @@
+{
+  "name": "@hamgom95/native-rpn",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "clear": "npm cache clean --force && npm install && npm run start -- --reset-cache",
+    "test": "jest",
+    "menu": "adb shell input keyevent 82",
+    "run": "react-native run-android",
+    "log": "react-native log-android",
+    "build:release": "cd android && gradlew assembleRelease",
+    "flow": "flow",
+    "flow-stop": "flow stop"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hamgom95/rpn": "^2.0.0",
+    "constate": "^1.0.0",
+    "react": "16.7.0-alpha.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31-with-hooks-dangerzone.tar.gz",
+    "react-native-draggable-flatlist": "^1.1.5",
+    "react-native-elements": "^1.0.0",
+    "react-native-gesture-handler": "^1.0.15",
+    "react-native-hooks": "^0.0.6",
+    "react-native-vector-icons": "^6.2.0",
+    "react-navigation": "^3.0.9"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.0.0",
+    "flow-bin": "^0.86.0",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
+  }
+}
