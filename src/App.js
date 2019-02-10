@@ -9,7 +9,7 @@ import createContainer from "constate";
 
 import {HomeScreen} from "./components/HomeScreen";
 import {SettingsScreen} from "./components/SettingsScreen";
-import { useSwitchList } from "./hooks/switchlist";
+import { useSwitchList } from "@hamgom95/hook-switchlist";
 
 export const SettingsContainer = createContainer(() => useSwitchList(()=>Object.keys(rpn.ops), []));
 

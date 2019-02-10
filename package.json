@@ -14,6 +14,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@hamgom95/hook-switchlist": "^1.0.0",
     "@hamgom95/rpn": "^2.0.0",
     "constate": "^1.0.0",
     "react": "16.7.0-alpha.0",
